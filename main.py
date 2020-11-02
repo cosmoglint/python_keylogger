@@ -2,7 +2,12 @@ import pynput
 
 from pynput.keyboard import Key, Listener
 
+count = 0
+keys = []
+
+
 def pressed(key):
+    global keys, count
     print(key, "pressed")
 
 def released(key):
